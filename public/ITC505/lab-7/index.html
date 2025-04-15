@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mad Lib Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mad Lib Fun!</h1>
+  <form action="/submit" method="POST">
+    <div>
+      <label for="noun">Noun:</label>
+      <input type="text" id="noun" name="noun" required>
+    </div>
+    <div>
+      <label for="verb">Verb:</label>
+      <input type="text" id="verb" name="verb" required>
+    </div>
+    <div>
+      <label for="adjective">Adjective:</label>
+      <input type="text" id="adjective" name="adjective" required>
+    </div>
+    <div>
+      <label for="adverb">Adverb:</label>
+      <input type="text" id="adverb" name="adverb" required>
+    </div>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <button type="submit">Create Mad Lib</button>
+    </div>
+  </form>
+
+  <!-- Footer with Last Modified Date -->
+  <footer>
+    <p>Last updated: 
+      <span id="lastModified"></span>
+    </p>
+  </footer>
+  <script type="text/javascript">
+    var x = document.lastModified;
+    document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+</html>
